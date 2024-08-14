@@ -1,0 +1,11 @@
+services:
+  py-app:
+    build: .
+    container_name: py-app
+    ports:
+      - "2323:2323"
+    volumes:
+      - .:/app
+    stdin_open: true      
+    tty: true             
+    command: /bin/bash  
